@@ -1,0 +1,11 @@
+<p>
+  home works!
+</p>
+
+<ul>
+  <li *ngFor="let item of data">
+     <a href="#" [routerLink]="['/test',item.id]" >  {{item.name}} </a>
+    </li>
+</ul>
+
+{{data}}

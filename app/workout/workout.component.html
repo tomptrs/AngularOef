@@ -1,0 +1,34 @@
+<p>
+  workout works!
+
+</p>
+{{Plan}}
+<select [(ngModel)]="selectedValue">
+  <option *ngFor="let c of Plan" [ngValue]="c">{{c.Naam}}</option>
+</select>
+
+<!--
+{{ActieveOefening | json}}
+-->
+
+
+
+
+<div class="panels">
+  <!--Panel-->
+<div *ngFor="let o of selectedValue.Oefeningen" class="card">
+  <div class="card-header deep-orange lighten-1 white-text">
+      Oefening
+  </div>
+  <div class="card-body">
+      <h4 class="card-title">{{o.Titel}}</h4>
+      <p class="card-text">{{o.Beschrijving}}</p>
+      <a class="btn btn-deep-orange waves-light" mdbRippleRadius>{{o.Tijdsduur}}</a>
+  </div>
+</div>
+<!--/.Panel-->
+</div>
+
+<h1>{{teller}}</h1>
+
+<p *ngIf="isDone">Goed gewerkt</p>

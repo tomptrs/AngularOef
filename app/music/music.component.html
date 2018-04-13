@@ -1,0 +1,38 @@
+<p>
+  music works!
+</p>
+<button (click)="Authorize()">Authorize</button>
+
+Zoek:
+<input type="text" #inv (keyup)="SearchMusic(inv.value)">
+<!--<img src="https://lastfm-img2.akamaized.net/i/u/174s/cad95a4741ad48fdaf52effde337d910.png">
+<img src="https://lastfm-img2.akamaized.net/i/u/300x300/fa2aa2f633a6891f211cad6c8e642be9.png">
+<img src="https://lastfm-img2.akamaized.net/i/u/300x300/92c3ee08d83a4e57ce8dee9c18ae4fef.png"> 
+<img src="https://lastfm-img2.akamaized.net/i/u/300x300/13a06ad826d0421399d3a151bac50777.png" style="height:80px" />-->
+
+
+<ul>
+  
+    <li *ngFor="let artist of artists.artist">
+    
+        <div class="panels">
+    
+            <div class="card">
+              <div class="card-header deep-orange lighten-1 white-text">
+                  <a href="{{artist.url}}">{{artist.name}}</a>
+              </div>
+              <div class="card-body">
+                  <h4 class="card-title">  {{artist.name}}</h4>
+                  <p class="card-text"><img src="{{artist.image[3]['#text']}}"/></p>
+                  <a class="btn btn-deep-orange waves-light" mdbRippleRadius></a>
+              </div>
+            </div>
+     </div> 
+     
+    
+
+      
+    </li>
+  </ul>
+
+  

@@ -1,0 +1,14 @@
+<p>
+  weer2 works!
+</p>
+
+{{berichten | json}}
+
+
+<ul>
+  <li *ngFor="let item of weerberichtService.berichten">{{item.Description}}</li>
+</ul>
+
+
+<p *ngIf="isVisible">JUIST</p>
+<p *ngIf="!isVisible">Fout</p>

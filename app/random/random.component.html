@@ -1,0 +1,16 @@
+
+
+Gok:<input type="text" [(ngModel)]="gokGetal">
+<input type="button" (click)="Validate()" value="Valideer">
+<input type="button" (click)="Opnieuw()" value="Opnieuw">
+
+
+<p *ngIf="resultaat >0">
+  te hoog
+</p>
+<p *ngIf="resultaat < 0">
+  te laag
+</p>
+<p *ngIf="resultaat == 0">
+  JUIST!!!
+</p>
