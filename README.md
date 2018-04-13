@@ -1,2 +1,2 @@
 # AngularOef
-Oefeningen
+Oefeningen te vinden in de app folder
